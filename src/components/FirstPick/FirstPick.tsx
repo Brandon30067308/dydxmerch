@@ -63,7 +63,7 @@ const FirstPick: FC = () => {
                 className="w-full max-w-[40%] md:max-w-[30%] lg:max-w-[204px] lg:mb-12 py-[5%] mr-4"
               />
               <p className="w-full max-w-sm lg:max-w-full text-secondary font-medium text-lg text-center leading-6 tracking-tight">
-                You're a VIP! You now have access to special products and
+                You&apos;re a VIP! You now have access to special products and
                 discounts.
               </p>
             </div>
