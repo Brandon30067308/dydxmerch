@@ -14,13 +14,15 @@ const Hero: FC = () => {
   const { width } = useWindowDimensions();
 
   return (
-    <main className="Hero relative w-full min-h-screen grid overflow-hidden pb-10 sm:pb-12">
+    <main className="Hero relative w-full min-h-[calc(100vh-(44px+var(--nav-height)))] md:min-h-screen grid overflow-hidden pb-10 sm:pb-12">
       <div className="w-full h-max max-h-full">
-        <Image
-          src={width < breakpoints.sm ? heroBgMobileImage : heroBgImage}
-          alt="hero background"
-          className="w-full object-top object-cover"
-        />
+        {width !== 0 && (
+          <Image
+            src={width < breakpoints.sm ? heroBgMobileImage : heroBgImage}
+            alt="hero background"
+            className="w-full object-top object-cover"
+          />
+        )}
       </div>
 
       <div className="absolute w-full top-1/2 -translate-y-1/2 flex justify-center mx-auto z-10">
